@@ -1,9 +1,9 @@
 import ImportPreline from "../preline"
 import SidebarHeader from "../components/header/sidebarHeader"
 import MiniHeader from "../components/header/miniHeader"
-import CreateMelodiesSection from "../components/section/createMelodiesSection"
+import PreviewSongsSection from "../components/section/previewSongsSection"
 
-export default function CreateMelodies() {
+export default function PreviewSongs() {
 
     return (
 
@@ -14,11 +14,11 @@ export default function CreateMelodies() {
             <SidebarHeader />
             <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
 
-                <MiniHeader mini_title="Create Melodies"/>
+                <MiniHeader mini_title="Songs you listen to"/>
 
                 <div class="px-6 pt-6 2xl:container">
 
-                    <CreateMelodiesSection />
+                    <PreviewSongsSection />
 
                 </div>
 
