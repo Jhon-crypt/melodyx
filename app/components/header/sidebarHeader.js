@@ -26,22 +26,22 @@ export default function SidebarHeader() {
 
                     <ul class="space-y-2 tracking-wide mt-8">
                         <li>
-                            <a href="#" aria-label="dashboard" class="relative px-4 py-3 flex items-center text-gray-600 space-x-4 rounded-xl hover:text-white hover:bg-orange-600">
+                            <Link href="/home" aria-label="dashboard" class="relative px-4 py-3 flex items-center text-gray-600 space-x-4 rounded-xl hover:text-white hover:bg-orange-600">
                                 <AiFillHome />
                                 <span class="-mr-1 font-medium">Home</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group hover:text-white hover:bg-orange-600">
+                            <Link href="/createMelodies" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group hover:text-white hover:bg-orange-600">
                                 <BsMusicNoteList />
                                 <span class="font-medium">Create Melodies</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group hover:text-white hover:bg-orange-600">
+                            <Link href="/settings" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group hover:text-white hover:bg-orange-600">
                                 <FiSettings />
                                 <span class="font-medium">Settings</span>
-                            </a>
+                            </Link>
                         </li>
                         
                     </ul>

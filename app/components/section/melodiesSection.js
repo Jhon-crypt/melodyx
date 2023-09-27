@@ -18,7 +18,7 @@ export default function MelodiesSection() {
                                     <h2 class="text-gray-900 text-lg title-font font-medium pb-2">The Catalyzer</h2>
                                     <iframe
                                         title="Spotify Embed: Recommendation Playlist "
-                                        src={`https://open.spotify.com/embed/playlist/3I09JrMpSepA0DwTwM9yz7?utm_source=generator&theme=2`}
+                                        src={`https://open.spotify.com/embed/playlist/3I09JrMpSepA0DwTwM9yz7?utm_source=generator&theme=1`}
                                         width="100%"
                                         height="100%"
                                         style={{ minHeight: '360px' }}
