@@ -2,8 +2,9 @@
 import { FaSpotify } from 'react-icons/fa'
 import { BiLinkExternal } from 'react-icons/bi'
 import Typewriter from 'typewriter-effect';
+import Link from 'next/link';
 
-export default function HeaderHero() {
+export default function HeaderHero(props) {
 
     return (
 
@@ -26,9 +27,9 @@ export default function HeaderHero() {
                             analysing your listening history and preferences from spotify and ensuring that every song recommendation feels like it was handpicked just for you
                         </p>
                         <div class="flex justify-center">
-                            <button type="button" class="sm:p-5 py-3 mr-5 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-orange-600 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all text-sm ">
+                            <Link href={`${props.AUTH_ENDPOINT}?client_id=${props.CLIENT_ID}&redirect_uri=${props.REDIRECT_URI}&response_type=${props.RESPONSE_TYPE}`} type="button" class="sm:p-5 py-3 mr-5 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-orange-600 text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all text-sm ">
                                 <FaSpotify className='mr-1'/> Login with Spotify
-                            </button>
+                            </Link>
                             
                         </div>
                     </div>
